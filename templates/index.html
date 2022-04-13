@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="{{url_for('static',filename='styles.css') }}">
+
+
+ </head>
+
+ <body>
+ 	<div id="div1" >
+	 	<center><h2 class="anish"> PRESENTED BY:Srinivas Anish Raj</h2></center><br>
+ 	</div><br>
+	 <center><h2>Choose the file by clicking on button below:</h2></center><br><br>
+ 	<div id="div2">
+ 		<center>
+ 		<form action = "" method = "POST" enctype = "multipart/form-data">
+			<p><b><input type = "file" name = "file" accept=".csv" class ="inp" id ="inp" required/></p></b>
+ 			<br><br>
+			<p><b>Min Support:</p></b>
+ 			<input type="number" name="text" step="any" min="2" required>
+			<br><br><br><br>
+ 			<input type = "submit"/>
+ 		</form>
+ 		</center>
+ 	</div>
+ 	<div id='div3'><center>
+ 		<h3>{{output}}</h3></br>{{tot}}</center>
+ 	</div>
+ 	<footer id='div4'></footer>
+ </body>
+</html>
